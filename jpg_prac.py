@@ -1,4 +1,5 @@
 import time
+import json
 from openpyxl import Workbook
 import openpyxl
 from selenium import webdriver
@@ -16,12 +17,14 @@ chrome_options= webdriver.ChromeOptions()
 chrome_options.add_argument("headless")
 chrome_options.add_argument("--window-size=1920x1080")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-corn = {}
-tier = ['CM', 'UC', 'RA', 'LE', 'MY']
-size = ['small', 'medium', 'large', 'epic', 'copias']
+json_file = open('NFT.json')
+project_info = json.load(json_file)
+corn = project_info['Projects']['Cornucopias']
+tier = corn['tier']
+size = corn['size']
 driver.get(JPG_PATH)
 while(1):
-    time.sleep(3)
+    #time.sleep(3)
     for s in size:
         print("==== {} ====".format(s))
         WebDriverWait(driver, 100).until(EC.presence_of_element_located((By.XPATH,'//*[@id="collectionSearch"]' )))

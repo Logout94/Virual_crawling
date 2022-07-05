@@ -1,0 +1,29 @@
+{
+    "Update": "2022-07-05",
+    "Chain": "Cardano",
+    "Projects":
+    {
+        "Cornucopias": 
+            {
+                "url": "cornucopias-land-zones",
+                "size": [
+                    "small",
+                    "medium",
+                    "large",
+                    "epic",
+                    "copias"
+                ],
+                "tier": [
+                    "CM",
+                    "UC",
+                    "RA",
+                    "LE",
+                    "MY"
+                ]
+            },
+        "Pavia": 
+        {
+            "url": "pavia"
+        }
+    }
+}
