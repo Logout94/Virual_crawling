@@ -6,24 +6,29 @@
         "Cornucopias": 
         {
             "url": "https://www.jpg.store/collection/cornucopias-land-zones",
-            "size": [
-                "small",
-                "medium",
-                "large",
-                "epic",
-                "copias"
-            ],
-            "tier": [
-                "CM",
-                "UC",
-                "RA",
-                "LE",
-                "MY"
-            ]
-        },
+            "property":
+            {
+                "size": [
+                    "small",
+                    "medium",
+                    "large",
+                    "epic",
+                    "copias"
+                ],
+                "tier": [
+                    "CM",
+                    "UC",
+                    "RA",
+                    "LE",
+                    "MY"
+                ]
+    
+            }
+       },
         "Pavia": 
         {
-            "url": "https://www.jpg.store/collection/pavia"
+            "url": "https://www.jpg.store/collection/pavia",
+            "property": "None"
         },
         "Moon":
         {
