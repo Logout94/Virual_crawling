@@ -4,26 +4,34 @@
     "Projects":
     {
         "Cornucopias": 
-            {
-                "url": "cornucopias-land-zones",
-                "size": [
-                    "small",
-                    "medium",
-                    "large",
-                    "epic",
-                    "copias"
-                ],
-                "tier": [
-                    "CM",
-                    "UC",
-                    "RA",
-                    "LE",
-                    "MY"
-                ]
-            },
+        {
+            "url": "https://www.jpg.store/collection/cornucopias-land-zones",
+            "size": [
+                "small",
+                "medium",
+                "large",
+                "epic",
+                "copias"
+            ],
+            "tier": [
+                "CM",
+                "UC",
+                "RA",
+                "LE",
+                "MY"
+            ]
+        },
         "Pavia": 
         {
-            "url": "pavia"
+            "url": "https://www.jpg.store/collection/pavia"
+        },
+        "Moon":
+        {
+            "url": "https://www.jpg.store/collection/moon",
+            "property": [
+                "near",
+                "far"
+            ]
         }
     }
 }
