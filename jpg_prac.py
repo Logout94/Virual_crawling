@@ -19,15 +19,15 @@ chrome_options.add_argument("--window-size=1920x1080")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 json_file = open('NFT.json')
 project_info = json.load(json_file)
-corn = project_info['Projects']['Cornucopias']
+corn = project_info['Projects']['Cornucopias']['property']
 tier = corn['tier']
 size = corn['size']
 driver.get(JPG_PATH)
 while(1):
+    WebDriverWait(driver, 100).until(EC.presence_of_element_located((By.XPATH,'//*[@id="collectionSearch"]' )))
     #time.sleep(3)
     for s in size:
         print("==== {} ====".format(s))
-        WebDriverWait(driver, 100).until(EC.presence_of_element_located((By.XPATH,'//*[@id="collectionSearch"]' )))
         #WebDriverWait(driver, 100).until(EC.presence_of_all_elements_located((By.ID,'collectionSearch' )))
         find_bar = driver.find_element(By.ID, 'collectionSearch')
         driver.implicitly_wait(10)
